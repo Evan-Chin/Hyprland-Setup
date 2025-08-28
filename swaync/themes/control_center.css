@@ -1,0 +1,254 @@
+@define-color text            rgb(200,190,200);  /* Fixed blue value */
+@define-color background-alt  alpha(@text, .4);  /* Using @text since @color1 wasn't defined */
+@define-color selected        rgb(200,190,200);  /* Fixed blue value */
+@define-color hover           rgb(85,73,124);
+@define-color urgent          rgb(255,0,0);      /* Defined since @error wasn't defined */
+@define-color background-sec  rgb(44,38,59);     /* Added missing definition */
+
+* {
+  color: @text;
+
+  all: unset;
+  font-size: 14px;
+  font-family: "JetBrains Mono Nerd Font";
+  transition: 200ms;
+
+}
+
+/* Avoid 'annoying' backgroud */
+.blank-window {  
+  background: transparent;  
+}
+  
+/* CONTROL CENTER ------------------------------------------------------------------------ */
+
+.control-center {
+  background-color: rgba(44, 38, 59, 1);
+  border-radius: 40px;
+  border: 1px solid @selected;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0);
+  margin: 18px;
+  padding: 12px;
+}
+
+/* Notifications  */
+.control-center .notification-row .notification-background,
+.control-center .notification-row .notification-background .notification.critical {
+  background-color:rgb(40, 38, 55);
+  border: 1px solid @hover;
+  border-radius: 16px;
+  margin: 4px 0px;
+  padding: 4px;
+}
+
+.control-center .notification-row .notification-background .notification.critical {
+  color: @urgent;
+}
+
+.control-center .notification-row .notification-background .notification .notification-content {
+  margin: 6px;
+  padding: 6px 6px 2px 2px;
+}
+
+.control-center .notification-row .notification-background .notification > *:last-child > * {
+  min-height: 3.4em;
+}
+
+.control-center .notification-row .notification-background .notification > *:last-child > * .notification-action {
+  background: alpha(@selected, .6);
+  color: @text;
+  border-radius: 12px;
+  margin: 6px;
+}
+
+.control-center .notification-row .notification-background .notification > *:last-child > * .notification-action:hover {
+  background: @selected;
+}
+
+.control-center .notification-row .notification-background .notification > *:last-child > * .notification-action:active {
+  background-color: @selected;
+}
+
+/* Buttons */
+
+.control-center .notification-row .notification-background .close-button {
+  background: transparent;
+  border-radius: 6px;
+  color: rgba(44, 38, 59, 0.82);
+  margin: 0px;
+  padding: 4px;
+}
+
+.control-center .notification-row .notification-background .close-button:hover {
+  background-color: @selected;
+}
+
+.control-center .notification-row .notification-background .close-button:active {
+  background-color: @selected;
+}
+
+progressbar,
+progress,
+trough {
+  border-radius: 12px;
+}
+
+progressbar {
+  background-color: rgba(255,255,255,.1);
+}
+
+/* Notifications expanded-group */
+
+.notification-group {
+  margin: 2px 8px 2px 8px;
+
+}
+.notification-group-headers {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: @text;
+  letter-spacing: 2px;
+}
+
+.notification-group-icon {
+  color: @text;
+}
+
+.notification-group-collapse-button,
+.notification-group-close-all-button {
+  background: transparent;
+  color: @text;
+  margin: 4px; 
+  border-radius: 6px;
+  padding: 4px;
+}
+
+.notification-group-collapse-button:hover,
+.notification-group-close-all-button:hover {
+  background: @hover;
+}  
+
+/* WIDGETS --------------------------------------------------------------------------- */
+
+  /* Notification clear button */
+.widget-title {
+  font-size: 1.2em;
+  margin: 6px;
+}
+
+.widget-title button {
+  background: alpha(@hover, .50);
+  border-radius: 6px;
+  padding: 4px 16px;
+}
+
+.widget-title button:hover {
+  background-color: @hover;
+}
+
+.widget-title button:active {
+  background-color: @selected;
+}
+
+  /* Do not disturb */
+.widget-dnd {
+  margin: 6px;
+  font-size: 1.2rem;
+}
+
+.widget-dnd > switch {
+  background: rgb(162, 147, 190);
+  font-size: initial;
+  border-radius: 50px;
+  box-shadow: none;
+  padding: 2px;
+}
+
+.widget-dnd > switch:hover {
+  background: rgb(132, 117, 190);
+}
+
+.widget-dnd > switch:checked {
+  background: rgb(102, 87, 160);
+}
+
+.widget-dnd > switch:checked:hover {
+  background: rgb(132, 117, 190);
+}
+
+.widget-dnd > switch slider {
+  background: rgb(210, 198, 251);
+  border-radius: 50px;
+}
+
+  /* Buttons menu */
+.widget-buttons-grid {
+  font-size: x-large;
+  padding: 6px 2px;
+  margin: 6px;
+  border-radius: 12px;
+  background: alpha(@hover, .50);
+}
+
+.widget-buttons-grid>flowbox>flowboxchild>button {
+  margin: 4px 10px;
+  padding: 6px 12px;
+  background: transparent;
+  border-radius: 8px;
+}
+
+.widget-buttons-grid>flowbox>flowboxchild>button:hover {
+  background: @hover;
+}
+
+
+  /* Music player */
+
+.widget-mpris {
+  color: @text;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  margin: 5px 10px 5px 10px;
+  box-shadow: none;
+}
+
+.widget-mpris>box>button,
+.widget-mpris-player,
+.widget-mpris-album-art {
+  border-radius: 30;
+  box-shadow: none;
+  padding: 5px 10px;
+  margin: 10px 0 0 0;
+}
+
+/* Volume */
+.widget-volume {
+  background: @background;
+  color: @background;
+  padding: 4px;
+  margin: 6px;
+  border-radius: 6px;
+}
+
+/* Slider Track (trough) */
+.widget-volume trough {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  min-height: 4px;
+}
+
+/* Slider Progress (highlight) */
+.widget-volume highlight {
+  background-color: @selected;
+  border-radius: 10px;
+}
+
+/* Slider Handle */
+.widget-volume slider {
+  background-color: @text;
+  border-radius: 50%;
+  min-width: 16px;
+  min-height: 16px;
+  margin: -6px; /* Makes handle appear on top of the track */
+}
+

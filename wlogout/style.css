@@ -1,0 +1,46 @@
+* {
+	background-image: none;
+	box-shadow: none;
+        font-family: "Adwaita Mono";
+}
+
+window {
+	background-color: rgba(3, 2, 15, 0.7); 
+}
+
+button {
+	text-decoration-color: #FFFFFF;
+    color: #FFFFFF;
+	background-color: rgba(39, 33, 63, 0.9);
+	border-style: solid;
+        border-width: 0px;
+        border-radius: 30px;
+        padding: 0px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 17%;
+        margin: 3px;
+        font-family: AdwaitaMono;
+}
+
+button:focus, button:active{
+	background-color: rgba(131, 128, 203, 1);
+	outline-style: none;
+        background-size: 15%;
+}
+
+#lock {
+    background-image: image(url("/usr/share/wlogout/icons/lock.png"), url("/usr/local/share/wlogout/icons/lock.png"));
+}
+
+#logout {
+    background-image: image(url("/usr/share/wlogout/icons/logout.png"), url("/usr/local/share/wlogout/icons/logout.png"));
+}
+
+#shutdown {
+    background-image: image(url("/usr/share/wlogout/icons/shutdown.png"), url("/usr/local/share/wlogout/icons/shutdown.png"));
+}
+
+#reboot {
+    background-image: image(url("/usr/share/wlogout/icons/reboot.png"), url("/usr/local/share/wlogout/icons/reboot.png"));
+}
