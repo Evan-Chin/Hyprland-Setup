@@ -23,6 +23,7 @@ rm -rv ~/.config/waybar
 rm -rv ~/.config/wlogout
 rm -rv ~/.config/wofi
 rm -rv ~/.config/starship.toml
+rm ~/.bashrc
 
 cd Hyprland-Setup
 mv -v ghostty ~/.config
