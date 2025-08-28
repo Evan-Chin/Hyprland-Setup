@@ -34,6 +34,7 @@ mv -v wlogout ~/.config
 mv -v wofi ~/.config
 mv -v starship.toml ~/.config
 mv -v bashrc ~/.bashrc
+mv -v wallpaper ~/
 
 echo Installation is done! Please log out and log back in!
 cd
