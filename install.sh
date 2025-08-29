@@ -3,7 +3,10 @@
 #Installs required packages
 
 echo Installing required packages...
-sudo pacman -S --needed hyprland starship  swww wlogout swaync hyprpaper hyprlock wofi yay ghostty thunar ttf-font-awesome
+sudo pacman -S --needed hyprland starship swww swaync hyprpaper hyprlock wofi yay ghostty thunar ttf-font-awesome
+git clone https://aur.archlinux.org/wlogout.git
+cd wlogout
+makepkg -si
 
 #move files from .git file
 
