@@ -3,8 +3,7 @@
 #Installs required packages
 
 echo Installing required packages...
-sudo pacman -S --needed hyprland starship  swww wlogout swaync hyprpaper hyprlock wofi yay ghostty thunar
-yay -S font-awesome-5
+sudo pacman -S --needed hyprland starship  swww wlogout swaync hyprpaper hyprlock wofi yay ghostty thunar ttf-font-awesome
 
 #move files from .git file
 
