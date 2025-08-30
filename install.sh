@@ -28,14 +28,14 @@ rm -rv ~/.config/starship.toml
 rm ~/.bashrc
 
 cd Hyprland-Setup
-cp -v ghostty ~/.config
-cp -v hypr ~/.config
-cp -v swaync ~/.config
-cp -v waybar ~/.config
-cp -v wlogout ~/.config
-cp -v wofi ~/.config
-cp -v starship.toml ~/.config
-mv bashrc ~/.bashrc
-cp wallpaper ~/
+cp -v Hyprland-Setup/ghostty ~/.config
+cp -v Hyprland-Setup/hypr ~/.config
+cp -v Hyprland-Setup/swaync ~/.config
+cp -v Hyprland-Setup/waybar ~/.config
+cp -v Hyprland-Setup/wlogout ~/.config
+cp -v Hyprland-Setup/wofi ~/.config
+cp -v Hyprland-Setup/starship.toml ~/.config
+mv Hyprland-Setup/bashrc ~/.bashrc
+cp Hyprland-Setup/wallpaper ~/
 
 echo Installation is done! Please log out and log back in! You can remove this directory now.
