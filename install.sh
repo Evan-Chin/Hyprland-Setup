@@ -19,6 +19,7 @@ if [[ ! $confirm =~ ^[Yy]$ ]]; then
     exit 0
 fi 
 
+cd ~/
 rm -rv ~/.config/hypr
 rm -rv ~/.config/swaync
 rm -rv ~/.config/waybar
