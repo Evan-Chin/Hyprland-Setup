@@ -27,15 +27,22 @@ rm -rv ~/.config/wofi
 rm -rv ~/.config/starship.toml
 rm ~/.bashrc
 
-cd Hyprland-Setup
-cp -v Hyprland-Setup/ghostty ~/.config
-cp -v Hyprland-Setup/hypr ~/.config
-cp -v Hyprland-Setup/swaync ~/.config
-cp -v Hyprland-Setup/waybar ~/.config
-cp -v Hyprland-Setup/wlogout ~/.config
-cp -v Hyprland-Setup/wofi ~/.config
-cp -v Hyprland-Setup/starship.toml ~/.config
+cp -r Hyprland-Setup/ghostty ~/.config/
+cp -r Hyprland-Setup/hypr ~/.config/
+cp -r Hyprland-Setup/swaync ~/.config/
+cp -r Hyprland-Setup/waybar ~/.config/
+cp -r Hyprland-Setup/wlogout ~/.config/
+cp -r Hyprland-Setup/wofi ~/.config/
+cp -r Hyprland-Setup/Wallpapers ~/
+
+# Copy starship configuration
+cp Hyprland-Setup/starship.toml ~/.config/
+
+# Handle bashrc (merge or replace)
+# This will overwrite existing .bashrc - use cat >> to append instead if needed
 mv Hyprland-Setup/bashrc ~/.bashrc
-cp Hyprland-Setup/wallpaper ~/
+
+echo "Installation is done! Please log out and log back in! You can remove this directory now."
+mv Hyprland-Setup/bashrc ~/.bashrc
 
 echo Installation is done! Please log out and log back in! You can remove this directory now.
