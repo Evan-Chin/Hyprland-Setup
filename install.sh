@@ -38,6 +38,4 @@ cp -v starship.toml ~/.config
 mv bashrc ~/.bashrc
 cp wallpaper ~/
 
-echo Installation is done! Please log out and log back in!
-cd
-rm Hyprland-Setup
+echo Installation is done! Please log out and log back in! You can remove this directory now.
