@@ -1,8 +1,8 @@
 #!/bin/bash
 swww-daemon
 # Directory containing wallpapers
-WALLPAPER_DIR="$HOME/Downloads/Wallpapers/"
-HISTORY_FILE="$HOME/Downloads/./last-wallpaper"
+WALLPAPER_DIR="$HOME/Wallpapers/"
+HISTORY_FILE="$HOME/Wallpapers/./last-wallpaper"
 
 # Get the list of wallpapers sorted alphabetically
 WALLPAPERS=($(find "$WALLPAPER_DIR" -type f | sort))
