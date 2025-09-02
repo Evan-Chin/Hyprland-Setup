@@ -204,21 +204,33 @@ progressbar {
 
   /* Music player */
 
-.widget-mpris {
-  color: @text;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 5px 10px;
-  margin: 5px 10px 5px 10px;
-  box-shadow: none;
-}
+@define-color mpris-album-art-overlay rgba(0, 0, 0, 0.55);
+@define-color mpris-button-hover rgba(0, 0, 0, 0.5);
 
-.widget-mpris>box>button,
-.widget-mpris-player,
-.widget-mpris-album-art {
-  border-radius: 30;
-  box-shadow: none;
-  padding: 5px 10px;
-  margin: 10px 0 0 0;
+.widget-mpris .widget-mpris-player {
+    padding: 16px;
+    margin: 16px 20px;
+    background-color: @mpris-album-art-overlay;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.65);
+}
+.widget-mpris .widget-mpris-player .widget-mpris-album-art {
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.65);
+}
+.widget-mpris .widget-mpris-player .widget-mpris-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 0px 8px 8px 8px;
+}
+.widget-mpris .widget-mpris-player .widget-mpris-subtitle {
+    font-size: 1rem;
+}
+.widget-mpris .widget-mpris-player > box > button:hover {
+    background-color: @mpris-button-hover;
+}
+.widget-mpris > box > button:hover {
+    background: alpha(@select, 0.6);
 }
 
 /* Volume */
