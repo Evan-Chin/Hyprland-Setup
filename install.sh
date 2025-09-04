@@ -44,6 +44,4 @@ cp Hyprland-Setup/starship.toml ~/.config/
 mv Hyprland-Setup/bashrc ~/.bashrc
 
 echo "Installation is done! Please log out and log back in! You can remove this directory now."
-mv Hyprland-Setup/bashrc ~/.bashrc
 
-echo Installation is done! Please log out and log back in! You can remove this directory now.
