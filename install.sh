@@ -28,13 +28,13 @@ rm -rv ~/.config/wofi
 rm -rv ~/.config/starship.toml
 rm ~/.bashrc
 
-cp -r Hyprland-Setup/ghostty ~/.config/
-cp -r Hyprland-Setup/hypr ~/.config/
-cp -r Hyprland-Setup/swaync ~/.config/
-cp -r Hyprland-Setup/waybar ~/.config/
-cp -r Hyprland-Setup/wlogout ~/.config/
-cp -r Hyprland-Setup/wofi ~/.config/
-cp -r Hyprland-Setup/Wallpapers ~/
+cp Hyprland-Setup/ghostty ~/.config/
+cp Hyprland-Setup/hypr ~/.config/
+cp Hyprland-Setup/swaync ~/.config/
+cp Hyprland-Setup/waybar ~/.config/
+cp Hyprland-Setup/wlogout ~/.config/
+cp Hyprland-Setup/wofi ~/.config/
+cp Hyprland-Setup/Wallpapers ~/
 
 # Copy starship configuration
 cp Hyprland-Setup/starship.toml ~/.config/
