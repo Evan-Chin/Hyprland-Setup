@@ -77,7 +77,7 @@ window#waybar.hidden {
 	color: #ffffff;
 }
 #workspaces button {
-	background-color: #1e2021;
+	background-color: rgba(44, 38, 59, 0.82);
 	color: #ffffff;
 	font-family: "AdvaitaMono";
 	font-size: 10px;
@@ -103,7 +103,7 @@ window#waybar.hidden {
 }
 #workspaces button.focused {
         background-color: #bbccdd;
-        color: #1e2021;
+        color: #;
 	font-family: "AdvaitaMono";
 	font-size: 10px;
 }
