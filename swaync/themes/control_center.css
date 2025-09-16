@@ -23,7 +23,7 @@
 /* CONTROL CENTER ------------------------------------------------------------------------ */
 
 .control-center {
-  background-color: rgba(44, 38, 59, 0.9);
+  background-color: rgba(44, 38, 59, 0.87);
   border-radius: 40px;
   border: 1px solid @selected;
   box-shadow: 0 0 10px 0 rgba(0,0,0,0);
