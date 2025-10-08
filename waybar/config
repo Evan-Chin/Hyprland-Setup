@@ -85,6 +85,8 @@ https://github.com/Alexays/Waybar/wiki
 		"format-muter": "muted",
                 "format-icons": {
 			"default": ["", "", "", ""]
+        "on-click": "pavucontrol",
+        "on-click-right": "killall pavucontrol"
 		},
 
 	},
