@@ -25,7 +25,7 @@
 .control-center {
   background-color: rgba(44, 38, 59, 0.87);
   border-radius: 40px;
-  border: 1px solid @selected;
+  border: 2px solid #bcaafc;
   box-shadow: 0 0 10px 0 rgba(0,0,0,0);
   margin: 18px;
   padding: 12px;
