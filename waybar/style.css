@@ -13,8 +13,9 @@ cy
 
 * {
 	 min-height: 10px;
-	 font-family: "Adwaita Mono";
+	 font-family: "JetBrainsMono NF";
 	 font-size: 10px;
+	 font-weight: 600;
 	 border: none;
 	 border-radius: 50px;
 }
@@ -83,8 +84,8 @@ window#waybar.hidden {
     box-shadow: none;
     text-shadow: none;
     padding: 0px;
-    margin-top: 2px;
-    margin-bottom: 2px;
+    margin-top: 3px;
+    margin-bottom: 0px;
     margin-left: 4px;
     border-radius: 50px;
     padding-left: 4px;
